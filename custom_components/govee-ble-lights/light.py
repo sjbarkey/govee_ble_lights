@@ -251,7 +251,7 @@ class GoveeBluetoothLight(LightEntity):
                 packet_brightness = math.ceil((brightness / 255) * 100)
                 commands.append(self._prepareSinglePacketData(LedCommand.BRIGHTNESS, [packet_brightness]))
                 self._brightness = kwargs.get(ATTR_BRIGHTNESS, 255)
-            else
+            else:
                 commands.append(self._prepareSinglePacketData(LedCommand.BRIGHTNESS, [brightness]))
                 self._brightness = brightness
 
