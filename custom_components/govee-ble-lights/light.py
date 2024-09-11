@@ -263,7 +263,7 @@ class GoveeBluetoothLight(LightEntity):
                                                               [LedMode.SEGMENTS, 0x01, red, green, blue, 0x00, 0x00, 0x00,
                                                                0x00, 0x00, 0xFF, 0x7F]))
             elif self._is_color_temp:
-                commands.append(self._prepareSinglePacketData(LedCommand.Color, [LedMode.RGB_TEMP, red, green, blue]))
+                commands.append(self._prepareSinglePacketData(LedCommand.COLOR, [LedMode.RGB_TEMP, red, green, blue]))
             else:
                 commands.append(self._prepareSinglePacketData(LedCommand.COLOR, [LedMode.MANUAL, red, green, blue]))
 
