@@ -29,7 +29,7 @@ _LOGGER = logging.getLogger(__name__)
 UUID_CONTROL_CHARACTERISTIC = '00010203-0405-0607-0809-0a0b0c0d2b11'
 EFFECT_PARSE = re.compile("\[(\d+)/(\d+)/(\d+)/(\d+)]")
 SEGMENTED_MODELS = ['H6053', 'H6072', 'H6102', 'H6199']
-COLOR_TEMP_MODELS = ['H6006', 'H6008', 'H613A', 'H613B', 'H613C', 'H613D', 'H613E', 'H613F', 'H613G', 'H6159', 'H6110', 'H614B', 'H614E']
+COLOR_TEMP_MODELS = ['H6006', 'H6008', 'H613A', 'H613B', 'H613C', 'H613D', 'H613E', 'H613F', 'H613G', 'H6159', 'H6163', 'H6110', 'H614B', 'H614E']
 
 class LedCommand(IntEnum):
     """ A control command packet's type. """
